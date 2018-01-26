@@ -59,10 +59,14 @@ def get_score(vision, hearing, speech, ambulation, dexterity, emotion, cognition
 
 import Question1 as eq
 
+
 # should equal ~0.70
 print("Score for 2, 1, 1, 2, 1, 2, 1, 3")
 print(eq.get_score(2, 1, 1, 2, 1, 2, 1, 3))
 
 # should equal 1
 print(eq.get_score(1, 1, 1, 1, 1, 1, 1, 1))
+
+# enter score that isn't valid - ValueError message should pop up for hearing level
+print(eq.get_score(1, 7, 1, 2, 3, 2, 4, 1))
 
